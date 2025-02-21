@@ -126,4 +126,4 @@ This project is created for learning purposes and is free to use for further dev
 
 If you like this project, don't forget to ⭐ the repository on GitHub!
 
-Made with 💖 by [Your Name]
+Made with 💖 by Virgi
