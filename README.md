@@ -23,8 +23,8 @@ Make sure you have installed:
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/YourUsername/foundry-smart-contract-lottery.git
-cd foundry-smart-contract-lottery
+git clone https://github.com/mvirgiawancr/foundry-lottery-smart-contract.git
+cd foundry-lottery-smart-contract
 forge build
 ```
 
