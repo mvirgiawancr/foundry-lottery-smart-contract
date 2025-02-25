@@ -33,7 +33,9 @@ import {VRFV2PlusClient} from "@chainlink/contracts/src/v0.8/vrf/dev/libraries/V
  * @dev Implements chainlink VRF
  */
 contract Raffle is VRFConsumerBaseV2Plus {
-    /** Errors */
+    /**
+     * Errors
+     */
     error Raffle__SendMoreToEnterRaffle();
     error Raffle__TransferFailed();
     error Raffle__RaffleIsNotOpen();
@@ -43,13 +45,17 @@ contract Raffle is VRFConsumerBaseV2Plus {
         uint256 raffleState
     );
 
-    /**Type Declarations */
+    /**
+     * Type Declarations
+     */
     enum RaffleState {
         OPEN,
         CALCULATING
     }
 
-    /** State Variables */
+    /**
+     * State Variables
+     */
     uint16 private constant REQUEST_CONFIRMATIONS = 3;
     uint32 private constant NUM_WORDS = 1;
     uint256 private immutable i_entranceFee;
@@ -63,7 +69,9 @@ contract Raffle is VRFConsumerBaseV2Plus {
     uint256 private s_lastTimeStamp;
     RaffleState private s_raffleState;
 
-    /** Events */
+    /**
+     * Events
+     */
     event RaffleEntered(address indexed player);
     event PickedWinner(address indexed winner);
     event RequestedRaffleWinner(uint256 indexed requestId);
